@@ -10,39 +10,39 @@ CREATE NEW SERVER KEYS
     o hit enter on all defaults
     o do not enter a password
  • do not enter company name
-    o	enter “y” twice
-    o	cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf /etc/openvpn
-    o	cp ca.crt server.crt server.key /etc/openvpn
-    o	ls (to confirm files)
-      	ca.crt
-      	dh2048.pem
-      	server.crt
-      	server.key
-      	server.conf
-  •	sudo service openvpn start
-  •	sudo service openvpn status
-    o	stop and restart are also commands
-  •	ifconfig
-    o	verify tun0 interface if running
+    o enter “y” twice
+    o cp /usr/share/doc/openvpn/examples/sample-config-files/server.conf /etc/openvpn
+    o cp ca.crt server.crt server.key /etc/openvpn
+    o ls (to confirm files)
+       ca.crt
+       dh2048.pem
+       server.crt
+       server.key
+       server.conf
+  • sudo service openvpn start
+  • sudo service openvpn status
+    o stop and restart are also commands
+  • ifconfig
+    o verify tun0 interface if running
 
 SERVER CERTIFICATE AUTHORITY (CA) SETUP
-    o	find word KEY_COUNTRY
-      	(optional) change certificate value information
-      	(optional) change both KEY_EXPIRE days
-    o	change export KEY_NAME=”EasyRSA” to
-      	export KEY_NAME=”server”
-      	this can be any other name for the server but take note of new name for later
-    o	exit
+  • find word KEY_COUNTRY
+    o (optional) change certificate value information
+    o (optional) change both KEY_EXPIRE days
+  • change export KEY_NAME=”EasyRSA” to
+    o export KEY_NAME=”server”
+    o this can be any other name for the server but take note of new name for later
+  • exit
 
 CREATE .PEM CERTIFICATE
-  •	sudo -s
+  • sudo -s
     o	. ./vars
     o	do not do ./clean-all
     o	./build-dh
       	wait 7min for 1024, 25min for 2048 or 4+ hours for 4096
 
 CREATE CA CERTIFICATE AND KEY
-    o	. ./vars
-    o	do not do ./clean-all
-    o	./build-ca
-      	hit enter on all defaults
+  • ../vars
+  • do not do ./clean-all
+  • ./build-ca
+    o hit enter on all defaults
