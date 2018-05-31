@@ -36,7 +36,7 @@ SERVER CERTIFICATE AUTHORITY (CA) SETUP
 
 CREATE .PEM CERTIFICATE
   • sudo -s
-    o	. ./vars
+    o	../vars
     o	do not do ./clean-all
     o	./build-dh
       	wait 7min for 1024, 25min for 2048 or 4+ hours for 4096
