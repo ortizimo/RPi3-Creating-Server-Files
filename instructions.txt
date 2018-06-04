@@ -1,8 +1,9 @@
-********************************************************
+﻿********************************************************
+Straightforward Training™
 Create New Server Files
-********************************************************
 Author: Saulo S. Ortiz
 Date: 20161229
+********************************************************
 
 CREATE NEW SERVER KEYS
  • ./build-key-server server
@@ -46,3 +47,8 @@ CREATE CA CERTIFICATE AND KEY
   • do not do ./clean-all
   • ./build-ca
     o hit enter on all defaults
+
+ts
+
+faults
+faults
